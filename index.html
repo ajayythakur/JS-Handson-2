@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Handson 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="ques">Q1. Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation.</p>
+    <p class="ans">Ans. <pre>
+        const Calculator = (A, B, C) => 
+        {
+            switch(A){
+              case"+":
+                var add=B+C;
+                return(add);
+                break;
+                case"*":
+                  var multiply=B*C;
+                  return(multiply);
+                  break;
+                  case"-":
+                    var diff=B-C;
+                    return(diff);
+                    break;
+                    case"/":
+                      var div=B/C;
+                      return(div);
+                      break;
+                      default:
+                      var def="Enter Operator Number1 Number2";
+                      return(def);
+                      break;        
+            } 
+        };</pre></p> <br>
+
+    <p class="ques">Q2. Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not.</p>
+    <p class="ans">Ans. <pre>const Check_divisibility = (N) => {
+        if(N%6===0 && N%9===0){
+          return ("Divisible by both");
+        }
+        else{
+          return ("Not Divisible by both");
+        }
+    };
+    </pre>
+    </p> <br>
+
+    <p class="ques">Q3. You are given an integer A, denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not.</p>
+    <p class="ans">Ans. <pre>
+        const isEligible = (a) => {
+            if(a<=17){
+            var c="Not Eligible for Voting"
+            return (c);
+          }
+          else{
+              var d=("Eligible for Voting");
+              return (d);
+          }
+          };
+    </pre></p> <br>
+
+    <p class="ques">Q4. PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values X and Y and asks you to find the relation between them. The relationships between integers X and Y are as follows: 
+       <br> If X< Y, it means that X is smaller than Y. <br>
+        If X>Y, it means that X is greater than Y. <br>
+        If X=Y, it means that X is equal to Y. 
+    </p> 
+    <p class="ans">Ans. <pre>
+        const findRelation = (x,y) =>{
+            if(x < y){
+               return x + ' is smaller than ' + y;
+            }
+            else if(x>y){
+                return x + ' is greater than ' + y;
+             }
+             else if(x=y){
+                return x + ' is equal to ' + y;
+             }
+             else{
+              return("Enter Valid Numbers");
+             }
+        };
+    </pre></p> <br>
+
+    <p class="ques">Q5. Your school has the following grading system based upon the marks(M) obtained by a student: <br>If M≤ 10, the grade will be E. <br> If 11≥M≤20, the grade will be D. <br> If 21≥M≤30, the grade will be C. <br> If 31≥M≤40, the grade will be B. <br> If 41≥M≤50, the grade will be A.</p>
+    <p class="ans">Ans. <pre>const findGrades = (a) => {
+        switch(true){
+          case (a<=10):
+          var E="E"
+            return (E);
+            break;
+            case (a<=20 && a>=11):
+             var D="D"
+            return(D);
+            break;
+            case (a<=30 && a>=21):
+             var C="C"
+            return(C);
+            break;
+            case (a<=40 && a>=31):
+             var B="B"
+            return(B);
+            break;
+            case (a&lt;=50 && a>=41):
+             var A="A"
+            return(A);
+            break;      
+        }  
+      };</pre> </p> <br>
+
+      <p class="ques">Q6. You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it. <br> |P or p 	- PrepBytes| <br> |Z or z 	- Zenith| <br> |E or e 	- Expert Coder| <br> |D or d 	- Data Structure.|</p>
+      <p class="ans">Ans. <pre>
+        const getValue = (a) => {
+            switch(true){
+            case (a=="P"||a=="p"):
+              return ("PrepBytes");
+              // break;
+              
+              case(a=="Z"||a=="z"):
+                return("Zenith");
+                // break;
+                
+                case(a=="E"||a=="e"):
+                  return ("Expert Coder");
+                  // break;
+                  
+                  case (a=="D"||a=="d"):
+                    return ("Data Structure");
+                    // break;
+                    
+                    default:
+                    return("Enter Valid Keyword");
+                    // break;
+            }
+        };
+      </pre></p> <br>
+
+      <p class="ques">Q7. Take three numbers and print the largest number among them if all of three are same print -1.</p>
+      <p class="ans">Ans. <pre>
+        const Max_out_of_three = (A,B,C) => {
+
+            if(A>B && A>C){
+               return(A);
+            }
+            else if(B>A && B>C){
+               return(B);
+            }
+            else if(C>A && C>B){
+               return (C);
+            }
+            else if(A=B=C){
+              var minus= -1
+              return (minus)
+            }
+            else{
+               var D="Enter Three Numbers"
+               return (D);
+            }
+         };
+      </pre></p> <br>
+
+      <p class="ques">Q8. You are given 3 distinct integers X,Y,and Z, and your task is to find and return the second smallest integer among the three provided integers. </p>
+      <p class="ans">Ans. <pre>
+
+      </pre></p> <br>
+
+      <p class="ques">Q8. Write a program takes three angles and checks whether the triangle is acute or obtuse.</p>
+      <p class="ans">Ans. <pre>
+        const Triangle_Check = (A,B,C) => {
+            if(A<90 && B &lt; 90 && C &lt; 90){
+              return(&apos;&apos;acute&apos;&apos;);
+            }
+            else{
+              return(&apos;&apos;obtuse&apos;&apos;);
+            }
+          };
+        </pre></p>
+
+</body>
+</html>
