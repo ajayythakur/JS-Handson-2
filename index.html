@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>JS Handson 2</h1>
+  <br>
     <p class="ques">Q1. Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation.</p>
     <p class="ans">Ans. <pre>
         const Calculator = (A, B, C) => 
@@ -163,10 +165,21 @@
 
       <p class="ques">Q8. You are given 3 distinct integers X,Y,and Z, and your task is to find and return the second smallest integer among the three provided integers. </p>
       <p class="ans">Ans. <pre>
-
+        const findSndSmallest = (x,y,z) => {
+          if((x < y && x > z) || (x > y && x < z)){
+            return x;
+          }
+          else if((y &lt; x && y > z) || (y > x && y < z)){
+            return y;
+          }else
+          {
+            return z;
+      }
+       
+      };
       </pre></p> <br>
 
-      <p class="ques">Q8. Write a program takes three angles and checks whether the triangle is acute or obtuse.</p>
+      <p class="ques">Q9. Write a program takes three angles and checks whether the triangle is acute or obtuse.</p>
       <p class="ans">Ans. <pre>
         const Triangle_Check = (A,B,C) => {
             if(A<90 && B &lt; 90 && C &lt; 90){
